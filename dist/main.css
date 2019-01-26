@@ -1,8 +1,156 @@
-html, body {
-	height:100%
-}
+html {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
 
 body {
-	background-color: 'black';
-	color:white;
-}
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: url("/public/img/bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 64px; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+
+p {
+  margin: 0; }
+
+strong {
+  font-weight: 400; }
+
+iframe {
+  width: 100%; }
+
+#overlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #21292A;
+  z-index: 1; }
+
+#preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  width: 240px; }
+
+#video-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden; }
+
+#modal-overlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #161c1dd4;
+  opacity: 0;
+  visibility: hidden; }
+
+#close {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  cursor: pointer;
+  padding: 20px;
+  opacity: .8; }
+
+#close:hover {
+  opacity: 1; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+
+.inline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menu-item {
+  display: inline-block;
+  margin-left: 16px; }
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  opacity: .8; }
+
+.menu-item a:hover {
+  opacity: 1; }
+
+.active {
+  border-bottom: 2px solid white; }
+
+.active a {
+  border-bottom: 2px solid white;
+  opacity: 1; }
+
+#logo img {
+  margin: -10px 0 0; }
+
+#watch-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: .8;
+  padding: 24px; }
+
+#watch-video img {
+  max-width: 44px; }
+
+#watch-video:hover {
+  opacity: 1; }
+
+#watch-video-title {
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: -6px;
+  width: 100px; }
+
+.hovered {
+  opacity: 1 !important;
+  visibility: visible !important; }
+
+@media screen and (max-width: 760px) {
+  body {
+    padding: 24px; } }
+
