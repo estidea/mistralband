@@ -140,6 +140,7 @@ iframe {
 
 #logo img {
     margin: -10px 0 0;
+    width:199px;
 }
 
 #watch-video {
@@ -190,7 +191,7 @@ iframe {
 	}
 }
 
-@media screen and (max-width:4800px) {
+@media screen and (max-width:480px) {
 	#logo img {
 	    margin: -4px 0 0;
 	    width: 80%;
