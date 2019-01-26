@@ -68,6 +68,8 @@ iframe {
     transform: translate(-50%,-50%);
  	opacity:0;
 	visibility: hidden;
+    width: 100%;
+    max-width: 560px;
 }
 
 #modal-overlay {
@@ -128,7 +130,7 @@ iframe {
 }
 
 .active {
-	border-bottom:2px solid white;
+/*	border-bottom:2px solid white;*/
 }
 
 .active a{
@@ -178,4 +180,27 @@ iframe {
 	body {
 		padding:24px;
 	}
+	#video-player {
+	    width: 100vw;
+	}
+	#close {
+	    top: -70px;
+	    right: 0;
+	    opacity: 1;
+	}
+}
+
+@media screen and (max-width:4800px) {
+	#logo img {
+	    margin: -4px 0 0;
+	    width: 80%;
+	}
+	#social {
+		display:none;
+	}
+
+	.active a {
+	    border-bottom: 1px solid white;
+	}
+
 }
